@@ -54,6 +54,10 @@
 #header__sub-menu:checked + .header__menu-link+  .header__sub-menu{
     display: inherit;
 }
+#header__sub-menu:checked + .header__menu-link  .rbcf-circle-down{
+    transform: rotate(180deg);
+    display: inline-block;
+}
 .header__sub-menu{
     display: none;
 }
