@@ -14,9 +14,11 @@ html
             href="http://robertoblake.com/"
         )
         link(rel="stylesheet", href="/style.css")
-    body 
+    body
         include ../header/header
-        include ../footer/footer
-        block awesome-block
+        .content
+            block awesome-block
+        .footer
+            include ../footer/footer
        
         

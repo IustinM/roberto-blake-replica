@@ -10,6 +10,8 @@
     align-items: center;
     border: 0.1rem solid $color-mercury;
     padding: 1.5rem;
+    position: relative;
+    background-color: $color-mine-shaft;
 
 }
 .header__name{
@@ -18,26 +20,55 @@
 }
 .rbcf-menu{
     font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.header__menu-item{
+    background-color: $color-mine-shaft;
 }
 .header__menu-link{
     color: $color-white;
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 1.5rem;
+    padding: 0.8rem 1.5rem;
     display: block;
-    &:first-child{
-        &:after{
-            font-family: 'roberto-blake-custom-font' !important;
-            content: "\e902";
-        }
-    }
+    cursor: pointer;
 }
 .header__menu-list{
-    display: none;
+    // display: none;
+    transition: 0.75s;
+    position: fixed;
+    top: 5.2rem;
+    left: 0;
+    right: 0;
+    border: 0.1rem solid $color-mercury;
 }
-#toggle-top-menu{
-    display: none;
+#toggle-top-menu,
+#header__sub-menu{
+     display: none;
 }
 #toggle-top-menu:checked + .header__menu-list{
+    // display: inherit;
+    top:-100%;
+}
+#header__sub-menu:checked + .header__menu-link+  .header__sub-menu{
     display: inherit;
+}
+.header__sub-menu{
+    display: none;
+}
+
+.header__menu-sub-link{
+    color: $color-white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem;
+    display: block;
+
+}
+.header__menu-sub-link{
+    padding: 1rem 2.5rem;
+}
+.rbcf-circle-down{
+    padding: 0 1rem ;
 }
