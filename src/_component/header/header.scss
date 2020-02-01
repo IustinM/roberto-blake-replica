@@ -20,7 +20,10 @@
 }
 .rbcf-menu{
     font-size: 2.5rem;
+    border: 0.1rem solid $color-mercury;
     cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .header__menu-item{
@@ -38,7 +41,7 @@
     // display: none;
     transition: 0.75s;
     position: fixed;
-    top: 5.2rem;
+    top:-100%;
     left: 0;
     right: 0;
     border: 0.1rem solid $color-mercury;
@@ -49,7 +52,8 @@
 }
 #toggle-top-menu:checked + .header__menu-list{
     // display: inherit;
-    top:-100%;
+    top:5.2rem;
+    
 }
 #header__sub-menu:checked + .header__menu-link+  .header__sub-menu{
     display: inherit;
@@ -75,4 +79,9 @@
 }
 .rbcf-circle-down{
     padding: 0 1rem ;
+}
+.header__top{
+    position: fixed;
+    left: 0;
+    right: 0;
 }
