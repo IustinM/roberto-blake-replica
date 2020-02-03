@@ -1,8 +1,28 @@
 .footer{
     font-size: 1.4rem;
     text-align: center;
-    background-color: $color-pizazz;
     
+    
+}
+.footer__social{
+    margin-bottom: 2rem;
+    background-color: $color-pizazz;
+    color: $color-white;
+    a{
+        color: $color-astral;
+        text-decoration: none;
+    }
+    h2{
+        font-size: 3rem;
+        padding: 1.5rem;
+        font-weight: normal;
+        
+    }
+    p{
+        font-size: 1.5rem;
+        padding: 1rem;
+
+    }
 }
 .footer-description{ 
 color: $color-white;
