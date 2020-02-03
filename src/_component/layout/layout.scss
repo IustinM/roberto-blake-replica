@@ -18,3 +18,16 @@ html,body{
 p{
     font-size: 1.6rem;
 }
+a{
+    color: $color-astral;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+        color: $color-bay-of-many;
+    }
+}
+hr{
+    border-top:0.1rem solid $color-gallery ;
+    padding: 1.5rem;
+}
+@import 'landing-content';
