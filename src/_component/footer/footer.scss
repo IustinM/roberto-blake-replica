@@ -31,14 +31,10 @@ margin: 0 auto;
 padding: 1rem;
 }
 .footer-link{
-    color: $color-astral;
+   
     padding: 1.5rem;
     display: inline-block;
-    text-decoration: none;
-    &:hover{
-        text-decoration: underline;
-        color: $color-bay-of-many;
-    }
+    
 }
 .social__icon{
     display: inline-block;
