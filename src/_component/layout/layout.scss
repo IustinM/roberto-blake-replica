@@ -30,6 +30,12 @@ hr{
     border-top:0.1rem solid $color-gallery ;
     padding: 1.5rem;
 }
+.text-justify{
+    text-align: justify;
+    p{
+        padding: 1rem 0;
+    }
+}
 .youtube-video-16-by-9{
     
     width: 100%;
@@ -39,6 +45,7 @@ hr{
        position: absolute;
        top: 0;
        left: 0;
+       z-index: -1;
    }
 }
 @import 'landing-content';
