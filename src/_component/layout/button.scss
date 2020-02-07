@@ -21,6 +21,8 @@
   }
 .button__small{
     padding: 0.5rem 1rem;
+    margin:1rem 0;
+    display: inline-block;
     @extend %button;
     &:hover{
       text-decoration: none;
