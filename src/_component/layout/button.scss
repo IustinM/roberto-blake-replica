@@ -2,24 +2,25 @@
     border:0.2rem solid  $color-fuel-yellow;
     background-color:$color-sandy-brown ;
     text-decoration: none;
-    font-size: 2rem;
     color: $color-white;
     //   margin: 0.5rem;
     display: inline-block;
     border-radius: 0.5rem;
-    text-transform: uppercase;
     &:hover{
       background-color: $color-fuel-yellow;
       border-color: $color-meteor;
     }
-  
-}
-.button__download{
+    
+  }
+  .button__download{
+    text-transform: uppercase;
+    font-size: 2rem;
     padding: 1rem 1.5rem;
     @extend %button;
-  
+    
   }
-.button__small{
+  .button__small{
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
     margin:1rem 0;
     display: inline-block;
